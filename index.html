@@ -22,7 +22,7 @@
        type="email"
        placeholder="Enter Your Email:"
        required>
-      <label id="number-label">Age:</label>
+      <label for="number" id="number-label">Age:</label>
       <input id="number"
       type="number"
       placeholder="Enter Your Age:"
@@ -30,10 +30,10 @@
       max="120">
       <h2>How often do you play Fallout?</h2>
       <select id="dropdown">
-        <option>Never</option>
-        <option>Casually</option>
-        <option>Often</option>
-        <option selected>Every Day</option>
+        <option value="never">Never</option>
+        <option value="casually">Casually</option>
+        <option value="often">Often</option>
+        <option value="every-day" selected>Every Day</option>
       </select>
       <h2>Favorite Fallout Game</h2>
       <input id="fallout-1" type="radio" value="fallout-1" name="favorite-game">
@@ -56,14 +56,14 @@
       <input type="checkbox" value="fallout-3" id="check-fallout-3" name="fallout-3">
       <label for="check-fallout-3">Fallout 3</label>
       <input type="checkbox" value="fallout-4" id="check-fallout-4" name="fallout-4">
-      <lable for="check-fallout-4">Fallout 4</label>
+      <label for="check-fallout-4">Fallout 4</label>
       <input type="checkbox" value="fallout-new-vegas" id="check-fallout-new-vegas" name="fallout-new-vegas">
       <label for="check-fallout-new-vegas">Fallout New Vegas</label>
       <input type="checkbox" value="fallout-76" id="check-fallout-76" name="fallout-76">
       <label for="check-fallout-76">Fallout 76</label>
       <h2>Reason why you chose your favorite Fallout Game</h2>
-      <lable for="comments">Give a breif description as to why you enjoy your favorite Fallout Game</label>
-      <textarea id="comments" name="comments">
+      <label for="comments">Give a breif description as to why you enjoy your favorite Fallout Game</label>
+      <textarea id="comments" name="comments" placeholder="Your response here...">
       </textarea>
       <button id="submit" type="submit">Submit</button>
     </form>
