@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Fallout Survey Form</h1>
+    <p id="description">What is your favorite Fallout game? In this survey you will fill out a few basic details about yourself so we can collect information about the demagraphics. Then determine your favorite Fallout game by filling out and submitting the information on the form provided. Thank you!</p>
+    <form id="survey-form">
+      <h2>Basic Information</h2>
+      <label id="name-label">Name:</label>
+      <input
+       id="name"
+       type="text"
+       placeholder="Enter Your Name:"
+       required>
+      <label id="email-label">Email:</label>
+      <input
+       id="email"
+       type="email"
+       placeholder="Enter Your Email:"
+       required>
+      <label id="number-label">Age:</label>
+      <input id="number"
+      type="number"
+      placeholder="Enter Your Age:"
+      min="1"
+      max="10">
+      <h2>How long have you played Fallout?</h2>
+      <select id="dropdown">
+        <option>Never</option>
+        <option>Casually</option>
+        <option>Often</option>
+        <option selected>Every Day</option>
+      </select>
+      <h2>Favorite Fallout Game</h2>
+      <input type="radio" value="fallout-1" name="favorite-game">
+      <label for="fallout-1">Fallout 1</label>
+      <input type="radio" value="fallout-2" name="favorite-game">
+      <label for="fallout-2">Fallout 2</label>
+      <input type="radio" value="fallout-3" name="favorite-game">
+      <label for="fallout-3">Fallout 3</label>
+      <input type="radio" value="fallout-4" name="favorite-game">
+      <label for="fallout-4">Fallout 4</label>
+      <input type="radio" value="fallout-new-vegas" name="favorite-game">
+      <label for="fallout-new-vegas">Fallout New Vegas</label>
+      <input type="radio" value="fallout-76" name="favorite-game">
+      <label for="fallout-76">Fallout 76</label>
+      <h2>Fallout Games Played</h2>
+      <input type="checkbox" value="fallout-1" id="fallout-1" name="fallout-1">
+      <label for="fallout-1">Fallout 1</label>
+      <input type="checkbox" value="fallout-2" id="fallout-2" name="fallout-2">
+      <label for="fallout-2">Fallout 2</label>
+      <input type="checkbox" value="fallout-3" id="fallout-3" name="fallout-3">
+      <label for="fallout-3">Fallout 3</label>
+      <input type="checkbox" value="fallout-4" id="fallout-4" name="fallout-4">
+      <label for="fallout-4">Fallout 4</label>
+      <input type="checkbox" value="fallout-new-vegas" id="fallout-new-vegas" name="fallout-new-vegas">
+      <label for="fallout-new-vegas">Fallout New Vegas</label>
+      <input type="checkbox" value="fallout-76" id="fallout-76" name="fallout-76">
+      <label for="fallout-76">Fallout 76</label>
+      <h2>Reason why you chose your favorite Fallout Game</h2>
+      <lable for="comments">Give a breif description as to why you enjoy your favorite Fallout Game</label>
+      <textarea id="comments" name="comments">
+      </textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
